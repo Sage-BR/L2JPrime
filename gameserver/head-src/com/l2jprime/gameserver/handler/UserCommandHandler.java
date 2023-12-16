@@ -1,0 +1,121 @@
+/*
+ * l2jprime Project - 4teambr.com 
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+ * 02111-1307, USA.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+package com.l2jprime.gameserver.handler;
+
+import java.util.Map;
+
+import javolution.util.FastMap;
+
+import org.apache.log4j.Logger;
+
+import com.l2jprime.Config;
+import com.l2jprime.gameserver.GameServer;
+import com.l2jprime.gameserver.handler.usercommandhandlers.ChannelDelete;
+import com.l2jprime.gameserver.handler.usercommandhandlers.ChannelLeave;
+import com.l2jprime.gameserver.handler.usercommandhandlers.ChannelListUpdate;
+import com.l2jprime.gameserver.handler.usercommandhandlers.ClanPenalty;
+import com.l2jprime.gameserver.handler.usercommandhandlers.ClanWarsList;
+import com.l2jprime.gameserver.handler.usercommandhandlers.DisMount;
+import com.l2jprime.gameserver.handler.usercommandhandlers.Escape;
+import com.l2jprime.gameserver.handler.usercommandhandlers.Loc;
+import com.l2jprime.gameserver.handler.usercommandhandlers.Mount;
+import com.l2jprime.gameserver.handler.usercommandhandlers.OfflineShop;
+import com.l2jprime.gameserver.handler.usercommandhandlers.OlympiadStat;
+import com.l2jprime.gameserver.handler.usercommandhandlers.PartyInfo;
+import com.l2jprime.gameserver.handler.usercommandhandlers.SiegeStatus;
+import com.l2jprime.gameserver.handler.usercommandhandlers.Time;
+
+/**
+ * This class ...
+ * @version $Revision: 1.1.2.1.2.5 $ $Date: 2005/03/27 15:30:09 $
+ */
+public class UserCommandHandler
+{
+	private static final Logger LOGGER = Logger.getLogger(GameServer.class);
+	
+	private static UserCommandHandler _instance;
+	
+	private final Map<Integer, IUserCommandHandler> _datatable;
+	
+	public static UserCommandHandler getInstance()
+	{
+		if (_instance == null)
+		{
+			_instance = new UserCommandHandler();
+		}
+		
+		return _instance;
+	}
+	
+	private UserCommandHandler()
+	{
+		_datatable = new FastMap<>();
+		registerUserCommandHandler(new Time());
+		registerUserCommandHandler(new OlympiadStat());
+		registerUserCommandHandler(new ChannelLeave());
+		registerUserCommandHandler(new ChannelDelete());
+		registerUserCommandHandler(new ChannelListUpdate());
+		registerUserCommandHandler(new ClanPenalty());
+		registerUserCommandHandler(new ClanWarsList());
+		registerUserCommandHandler(new DisMount());
+		registerUserCommandHandler(new Escape());
+		registerUserCommandHandler(new Loc());
+		registerUserCommandHandler(new Mount());
+		registerUserCommandHandler(new PartyInfo());
+		registerUserCommandHandler(new SiegeStatus());
+		if (Config.OFFLINE_TRADE_ENABLE && Config.OFFLINE_COMMAND1)
+			registerUserCommandHandler(new OfflineShop());
+		LOGGER.info("UserCommandHandler: Loaded " + _datatable.size() + " handlers.");
+	}
+	
+	public void registerUserCommandHandler(final IUserCommandHandler handler)
+	{
+		int[] ids = handler.getUserCommandList();
+		
+		for (final int id : ids)
+		{
+			if (Config.DEBUG)
+			{
+				LOGGER.debug("Adding handler for user command " + id);
+			}
+			_datatable.put(new Integer(id), handler);
+		}
+		ids = null;
+	}
+	
+	public IUserCommandHandler getUserCommandHandler(final int userCommand)
+	{
+		if (Config.DEBUG)
+		{
+			LOGGER.debug("getting handler for user command: " + userCommand);
+		}
+		
+		return _datatable.get(new Integer(userCommand));
+	}
+	
+	/**
+	 * @return
+	 */
+	public int size()
+	{
+		return _datatable.size();
+	}
+}

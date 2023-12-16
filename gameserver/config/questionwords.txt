@@ -1,0 +1,22 @@
+# You can active the anti bot on other.properties
+# Words to use between 10 and 16 keys.
+code123987
+code321789
+code147963
+code852369
+code159753
+code357159
+code951357
+code159852
+code357963
+code369248
+code758961
+code258852
+code357895
+code123698
+code147896
+code147982
+code321456
+code789654
+code456321
+code654987
