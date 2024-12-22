@@ -119,7 +119,7 @@ public class CharNameTable
 		try
 		{
 			con = L2DatabaseFactory.getInstance().getConnection(false);
-			final PreparedStatement statement = con.prepareStatement("SELECT count(char_name) FROM " + Config.LOGINSERVER_DB + ".accounts a, " + Config.GAMESERVER_DB + ".characters c where a.login = c.account_name and a.lastIP=?");
+			final PreparedStatement statement = con.prepareStatement("SELECT count(char_name) FROM " + Config.DATABASE_URL + ".accounts a, " + Config.DATABASE_URL + ".characters c where a.login = c.account_name and a.lastIP=?");
 			statement.setString(1, ip);
 			final ResultSet rset = statement.executeQuery();
 

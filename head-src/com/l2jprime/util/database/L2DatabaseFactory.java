@@ -25,8 +25,6 @@ import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 
-import com.l2jprime.Config;
-
 public abstract class L2DatabaseFactory
 {
 	private static final Logger LOGGER = Logger.getLogger(L2DatabaseFactory.class);
@@ -50,15 +48,7 @@ public abstract class L2DatabaseFactory
 	{
 		if (_instance == null)
 		{
-			if (Config.DATABASE_POOL_TYPE.equals("BoneCP"))
-			{
-				_instance = new L2DatabaseFactory_BoneCP();
-			}
-			else
-			{
-				_instance = new L2DatabaseFactory_c3p0();
-			}
-
+			_instance = new L2DatabaseFactory_c3p0();
 		}
 		return _instance;
 	}

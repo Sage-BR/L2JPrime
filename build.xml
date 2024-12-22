@@ -234,7 +234,7 @@
 
 
 		<delete dir="${build.classes}" />
-		<delete file="${build}/l2jprime-core.jar" />
+		<!--<delete file="${build}/l2jprime-core.jar" />-->
 
 	</target>
 

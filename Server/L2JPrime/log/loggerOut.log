@@ -76,3 +76,881 @@ java.sql.SQLException: Unable to load authentication plugin 'auth_gssapi_client'
 	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
 	at com.l2jprime.loginserver.L2LoginServer.<init>(L2LoginServer.java:132)
 	at com.l2jprime.loginserver.L2LoginServer.main(L2LoginServer.java:61)
+11:03:48,042  INFO GameServerTable:94 - Loaded 127 server names
+11:03:48,594 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: Unable to load authentication plugin 'auth_gssapi_client'.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:869)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:865)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1743)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.gameserver.datatables.GameServerTable.loadRegisteredGameServers(GameServerTable.java:208)
+	at com.l2jprime.gameserver.datatables.GameServerTable.<init>(GameServerTable.java:96)
+	at com.l2jprime.gameserver.datatables.GameServerTable.load(GameServerTable.java:80)
+	at com.l2jprime.gsregistering.GameServerRegister.main(GameServerRegister.java:53)
+11:06:08,919  INFO GameServerTable:94 - Loaded 127 server names
+11:06:09,550  INFO GameServerTable:97 - Loaded 0 registered Game Servers
+11:06:09,724  INFO GameServerTable:100 - Cached 10 RSA keys for Game Server communication.
+11:06:09,724  INFO GameServerRegister:62 - Welcome to l2jprime GameServer Regitering
+11:06:09,724  INFO GameServerRegister:63 - Enter The id of the server you want to register
+11:06:09,725  INFO GameServerRegister:64 - Type 'help' to get a list of ids.
+11:06:09,725  INFO GameServerRegister:65 - Type 'clean' to unregister all currently registered gameservers on this LoginServer.
+11:06:09,725  INFO GameServerRegister:68 - Your choice:
+11:06:16,070  INFO GameServerRegister:68 - Your choice:
+11:06:17,336  INFO GameServerRegister:130 - Server Registered hexid saved to 'hexid.txt'
+11:06:17,336  INFO GameServerRegister:131 - Put this file in the /config folder of your gameserver.
+11:06:32,631  INFO Util:141 - ======================================================================-[ Team ]
+11:06:32,634  INFO L2Prime:35 -                                                  		
+11:06:32,635  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:06:32,635  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:06:32,636  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:06:32,636  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:06:32,636  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:06:32,636  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:06:32,666  INFO Util:141 - ==================================================================-[ Database ]
+11:06:33,294  INFO Util:141 - ===========================================================-[ LoginController ]
+11:06:33,742  INFO LoginController:166 - Cached 10 KeyPairs for RSA communication
+11:06:33,781  INFO LoginController:220 - Stored 20 keys for Blowfish communication
+11:06:33,790  INFO GameServerTable:94 - Loaded 127 server names
+11:06:33,794  INFO GameServerTable:97 - Loaded 1 registered Game Servers
+11:06:33,865  INFO GameServerTable:100 - Cached 10 RSA keys for Game Server communication.
+11:06:33,923  INFO L2LoginServer:217 - Listening for GameServers on 127.0.0.1:9014
+11:06:33,925  INFO L2LoginServer:229 - Login Server ready on *:2106
+11:06:33,926  INFO Config:4168 - Loaded 2 IP Bans.
+11:06:41,016  INFO Util:141 - ======================================================================-[ Team ]
+11:06:41,018  INFO L2Prime:35 -                                                  		
+11:06:41,018  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:06:41,018  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:06:41,018  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:06:41,018  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:06:41,020  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:06:41,020  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:06:41,093  INFO Config:3950 - Loaded 20 Question Words.
+11:06:41,093  INFO Util:141 - ==================================================================-[ Database ]
+11:06:41,533 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: The connection property 'useSSL' only accepts values of the form: 'true', 'false', 'yes' or 'no'. The value 'falsegameserver_beta' is not in this set.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ConnectionPropertiesImpl$ConnectionProperty.validateStringValues(ConnectionPropertiesImpl.java:314)
+	at com.mysql.jdbc.ConnectionPropertiesImpl$BooleanConnectionProperty.initializeFrom(ConnectionPropertiesImpl.java:91)
+	at com.mysql.jdbc.ConnectionPropertiesImpl$ConnectionProperty.initializeFrom(ConnectionPropertiesImpl.java:216)
+	at com.mysql.jdbc.ConnectionPropertiesImpl.initializeProperties(ConnectionPropertiesImpl.java:2538)
+	at com.mysql.jdbc.ConnectionImpl.initializeDriverProperties(ConnectionImpl.java:3109)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:758)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.gameserver.GameServer.main(GameServer.java:209)
+11:08:15,581  INFO Util:141 - ======================================================================-[ Team ]
+11:08:15,583  INFO L2Prime:35 -                                                  		
+11:08:15,583  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:08:15,583  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:08:15,585  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:08:15,585  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:08:15,585  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:08:15,586  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:08:15,616  INFO Util:141 - ==================================================================-[ Database ]
+11:08:16,251  INFO Util:141 - ===========================================================-[ LoginController ]
+11:08:16,726  INFO LoginController:166 - Cached 10 KeyPairs for RSA communication
+11:08:16,749  INFO LoginController:220 - Stored 20 keys for Blowfish communication
+11:08:16,758  INFO GameServerTable:94 - Loaded 127 server names
+11:08:16,762  INFO GameServerTable:97 - Loaded 1 registered Game Servers
+11:08:16,852  INFO GameServerTable:100 - Cached 10 RSA keys for Game Server communication.
+11:08:16,909  INFO L2LoginServer:217 - Listening for GameServers on 127.0.0.1:9014
+11:08:16,911  INFO L2LoginServer:229 - Login Server ready on *:2106
+11:08:16,912  INFO Config:4168 - Loaded 2 IP Bans.
+11:08:21,058  INFO Util:141 - ======================================================================-[ Team ]
+11:08:21,060  INFO L2Prime:35 -                                                  		
+11:08:21,060  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:08:21,060  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:08:21,060  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:08:21,060  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:08:21,062  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:08:21,062  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:08:21,137  INFO Config:3950 - Loaded 20 Question Words.
+11:08:21,137  INFO Util:141 - ==================================================================-[ Database ]
+11:08:21,720 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: No timezone mapping entry for 'GMT-3gameserver_beta'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ConnectionImpl.configureTimezone(ConnectionImpl.java:1974)
+	at com.mysql.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:3231)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2233)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.gameserver.GameServer.main(GameServer.java:209)
+11:08:45,802  INFO Util:141 - ======================================================================-[ Team ]
+11:08:45,805  INFO L2Prime:35 -                                                  		
+11:08:45,805  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:08:45,805  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:08:45,805  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:08:45,805  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:08:45,806  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:08:45,807  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:08:45,878  INFO Config:3950 - Loaded 20 Question Words.
+11:08:45,878  INFO Util:141 - ==================================================================-[ Database ]
+11:08:46,318 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: The connection property 'useSSL' only accepts values of the form: 'true', 'false', 'yes' or 'no'. The value 'falsegameserver_beta' is not in this set.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ConnectionPropertiesImpl$ConnectionProperty.validateStringValues(ConnectionPropertiesImpl.java:314)
+	at com.mysql.jdbc.ConnectionPropertiesImpl$BooleanConnectionProperty.initializeFrom(ConnectionPropertiesImpl.java:91)
+	at com.mysql.jdbc.ConnectionPropertiesImpl$ConnectionProperty.initializeFrom(ConnectionPropertiesImpl.java:216)
+	at com.mysql.jdbc.ConnectionPropertiesImpl.initializeProperties(ConnectionPropertiesImpl.java:2538)
+	at com.mysql.jdbc.ConnectionImpl.initializeDriverProperties(ConnectionImpl.java:3109)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:758)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.gameserver.GameServer.main(GameServer.java:209)
+11:09:21,777  INFO Util:141 - ======================================================================-[ Team ]
+11:09:21,780  INFO L2Prime:35 -                                                  		
+11:09:21,780  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:09:21,781  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:09:21,781  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:09:21,781  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:09:21,783  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:09:21,783  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:09:21,852  INFO Config:3950 - Loaded 20 Question Words.
+11:09:21,853  INFO Util:141 - ==================================================================-[ Database ]
+11:09:22,288 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: Unsupported character encoding 'utf-8gameserver_beta'.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ConnectionPropertiesImpl.postInitialization(ConnectionPropertiesImpl.java:2575)
+	at com.mysql.jdbc.ConnectionPropertiesImpl.initializeProperties(ConnectionPropertiesImpl.java:2545)
+	at com.mysql.jdbc.ConnectionImpl.initializeDriverProperties(ConnectionImpl.java:3109)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:758)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.gameserver.GameServer.main(GameServer.java:209)
+11:09:57,973  INFO Util:141 - ======================================================================-[ Team ]
+11:09:57,976  INFO L2Prime:35 -                                                  		
+11:09:57,976  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:09:57,976  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:09:57,976  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:09:57,976  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:09:57,978  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:09:57,978  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:09:58,050  INFO Config:3950 - Loaded 20 Question Words.
+11:09:58,050  INFO Util:141 - ==================================================================-[ Database ]
+11:09:58,598 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'l2jdbgameserver_beta'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.gameserver.GameServer.main(GameServer.java:209)
+11:10:29,966  INFO Util:141 - ======================================================================-[ Team ]
+11:10:29,969  INFO L2Prime:35 -                                                  		
+11:10:29,970  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:10:29,970  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:10:29,970  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:10:29,970  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:10:29,973  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:10:29,973  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:10:30,044  INFO Config:3950 - Loaded 20 Question Words.
+11:10:30,045  INFO Util:141 - ==================================================================-[ Database ]
+11:10:30,687  INFO Loader:210 - L2DatabaseFactory: loaded.
+11:10:30,690  INFO Util:141 - ===================================================================-[ Threads ]
+11:10:30,700  INFO HtmCache:82 - Cache[HTML]: Running lazy cache
+11:10:30,703  INFO CrestCache:150 - Cache[Crest]: 0,000MB on 0 files loaded. (Forget Time: 300s , Capacity: 50)
+11:10:30,712  INFO L2ScriptEngineManager:89 - Initializing Script Engine Manager
+11:10:30,739  INFO L2ScriptEngineManager:118 - Script Engine: BeanShell Engine 1.1 - Language: BeanShell - Language Version: 2.0b5
+11:10:30,999  INFO L2ScriptEngineManager:118 - Script Engine: Oracle Nashorn 1.8.0_392 - Language: ECMAScript - Language Version: ECMA - 262 Edition 5.1
+11:10:33,555  INFO L2ScriptEngineManager:118 - Script Engine: jython 2.2.1 - Language: python - Language Version: 2.2.1
+11:10:33,562  INFO L2ScriptEngineManager:118 - Script Engine: java 1.6 - Language: java - Language Version: 1.6
+11:10:33,639  INFO Util:141 - =====================================================================-[ World ]
+11:10:33,641  INFO L2World:963 - L2World: Setting up World Regions
+11:10:33,672  INFO L2World:991 - L2World: (87x128) World Region Grid set up.
+11:10:33,684  INFO Announcements:192 - Announcements: Loaded 2 Announcements.
+11:10:33,688  INFO AutoAnnouncementHandler:84 - GameServer: Loaded 0 Auto Announcements.
+11:10:33,693  INFO IdFactory:136 - Updated characters online status.
+11:10:33,735  INFO BitSetIDFactory:79 - IDFactory: 102912 id's available.
+11:10:33,742  INFO StaticObjects:60 - StaticObject: Loaded 30 StaticObject Templates.
+11:10:33,760  INFO TeleportLocationTable:94 - TeleportLocationTable: Loaded 828 Teleport Location Templates
+11:10:33,763  INFO TeleportLocationTable:134 - TeleportLocationTable: Loaded {} Custom Teleport Location Templates. 178
+11:10:33,862  INFO ExperienceData:95 - ExperienceData: Loaded 87 levels
+11:10:33,862  INFO ExperienceData:96 - ExperienceData: Max Player Level is: 80
+11:10:33,864  INFO ExperienceData:97 - ExperienceData: Max Pet Level is: 80
+11:10:33,865  INFO DuelManager:56 - Initializing DuelManager
+11:10:33,871  INFO ClassDamageManager:107 - Loaded 31 classes Damages configurations
+11:10:33,872  INFO AutoSaveManager:56 - Initializing AutoSaveManager
+11:10:33,874  INFO Util:141 - ====================================================================-[ Skills ]
+11:10:35,484  INFO SkillsEngine:121 - SkillsEngine: Loaded 30515 Skill templates from XML files.
+11:10:35,487  INFO SkillTreeTable:76 - SkillSpellbookTable: Loaded 334 spellbooks
+11:10:35,488  INFO Loader:268 - Skills: All skills loaded.
+11:10:35,488  INFO Util:141 - =====================================================================-[ Items ]
+11:10:35,682  INFO ItemTable:300 - ItemTable: Loaded 1014 Armors.
+11:10:35,695  INFO ItemTable:306 - ItemTable: Loaded 6892 Items.
+11:10:35,850  INFO ItemTable:312 - ItemTable: Loaded 1313 Weapons.
+11:10:35,852  INFO ItemTable:649 - Highest item id used: 20006
+11:10:35,865  INFO ArmorSetsTable:87 - Loaded: 51 armor sets.
+11:10:35,867  INFO CustomArmorSetsTable:72 - ArmorSetsTable: Loaded custom armor sets.
+11:10:35,894  INFO ExtractableItemsData:148 - Extractable items data: Loaded 334 extractable items!
+11:10:35,897  INFO SummonItemsData:133 - Summon items data: Loaded 12 summon items.
+11:10:35,901  INFO SkillTreeTable:168 - FishTable: Loaded 270 Fishes.
+11:10:35,901  INFO Util:141 - =======================================================================-[ Npc ]
+11:10:35,902  INFO NpcWalkerRoutesTable:57 - Initializing Walkers Routes Table.
+11:10:35,906  INFO NpcWalkerRoutesTable:124 - WalkerRoutesTable: Loaded 167 Npc Walker Routes.
+11:10:36,169  INFO NpcTable:724 - NpcTable: Loaded 6592 Npc Templates.
+11:10:36,173  INFO NpcTable:724 - NpcTable: Loaded 6610 Npc Templates.
+11:10:36,207  INFO NpcTable:302 - CustomDropList : Added 0 custom droplist
+11:10:36,262  INFO NpcTable:441 - NpcTable: Loaded 447 Minions.
+11:10:36,263  INFO Util:141 - ================================================================-[ Characters ]
+11:10:36,270  INFO ForumsBBSManager:113 - Loaded 4 forums. Last forum id used: 4
+11:10:36,274  INFO ClanTable:154 - Restored 0 clans from the database.
+11:10:36,283  INFO CharTemplateTable:274 - CharTemplateTable: Loaded 89 Character Templates.
+11:10:36,287  INFO LevelUpData:106 - LevelUpData: Loaded 89 Character Level Up Templates.
+11:10:36,290  INFO HennaTable:115 - HennaTable: Loaded 180 Templates.
+11:10:36,348  INFO HennaTreeTable:138 - HennaTreeTable: Loaded 7128 Henna Tree Templates.
+11:10:36,351  INFO HennaTable:170 - Helper Buff Table: Loaded 14 templates
+11:10:36,351  INFO Util:141 - ===================================================================-[ Geodata ]
+11:10:36,353  INFO GeoData:40 - Geodata Engine: Disabled.
+11:10:36,353  INFO Util:141 - ===================================================================-[ Economy ]
+11:10:36,498  WARN TradeController:299 - L2TradeList 363 itemId  1856 has an ADENA sell price lower then reference price.. Automatically Updating it..
+11:10:36,499  WARN TradeController:299 - L2TradeList 364 itemId  1856 has an ADENA sell price lower then reference price.. Automatically Updating it..
+11:10:36,637  INFO TradeController:355 - TradeController: Loaded 508 Buylists.
+11:10:36,637  INFO TradeController:356 - TradeController: Loaded 132 Limited Buylists.
+11:10:36,644  INFO TradeController:574 - TradeController: Loaded 0 Custom Buylists.
+11:10:36,870  INFO Loader:328 - Multisell: loaded.
+11:10:36,870  INFO Util:141 - ================================================================-[ Clan Halls ]
+11:10:36,873  INFO ClanHallManager:72 - Initializing ClanHallManager
+11:10:36,914  INFO ClanHallManager:122 - Loaded: 0 clan halls
+11:10:36,914  INFO ClanHallManager:123 - Loaded: 44 free clan halls
+11:10:36,918  INFO FortressOfResistance:151 - Fortress of Resistanse: siege will start the 27/12/24 21:00
+11:10:36,921  INFO DevastatedCastle:161 - Devastated Castle: siege will start the 23/12/24 18:00
+11:10:36,924  INFO BanditStrongholdSiege:78 - SiegeManager of Bandits Stronghold
+11:10:36,930  INFO AuctionManager:130 - Initializing AuctionManager
+11:10:36,971  INFO AuctionManager:159 - Loaded: 38 auction(s)
+11:10:36,971  INFO Util:141 - ======================================================================-[ Zone ]
+11:10:36,978  INFO ZoneData:105 - Loading zones...
+11:10:37,038  INFO ArenaManager:39 - Initializing ArenaManager
+11:10:37,086  INFO TownManager:42 - Initializing TownManager
+11:10:37,258  INFO OlympiadStadiaManager:40 - Initializing OlympiadStadiaManager
+11:10:37,426  INFO CastleManager:117 - Initializing CastleManager
+11:10:37,447  INFO CastleManager:133 - Loaded: 9 castles
+11:10:37,482  INFO GrandBossManager:83 - Initializing GrandBossManager
+11:10:37,485  INFO GrandBossManager:130 - GrandBossManager: Loaded 15 Instances
+11:10:37,613  INFO FishingZoneManager:39 - Initializing FishingZoneManager
+11:10:38,226  INFO FortManager:56 - Initializing FortManager
+11:10:38,255  INFO FortManager:114 - Loaded: 21 fortress
+11:10:38,936  INFO GrandBossManager:182 - GrandBossManager: Initialized 17 Grand Boss Zones
+11:10:38,937  INFO ZoneData:598 - Done: loaded 565 zones.
+11:10:38,938  INFO Util:141 - =================================================================-[ Spawnlist ]
+11:10:38,995  INFO CustomNpcInstanceManager:201 - CustomNpcInstanceManager: loaded 4 NPC to PC polymorphs.
+11:10:39,265  INFO Siege:1236 - Siege of Dion: Sat Jan 04 20:00:00 BRT 2025
+11:10:39,404  INFO Siege:1236 - Siege of Oren: Sun Dec 29 16:00:00 BRT 2024
+11:10:40,160  INFO Siege:1236 - Siege of Gludio: Sat Jan 04 20:00:00 BRT 2025
+11:10:40,168  INFO Siege:1236 - Siege of Giran: Sun Dec 29 16:00:00 BRT 2024
+11:10:40,175  INFO Siege:1236 - Siege of Innadril: Sun Dec 29 16:00:00 BRT 2024
+11:10:40,179  INFO Siege:1236 - Siege of Aden: Sat Jan 04 20:00:00 BRT 2025
+11:10:40,248  INFO Siege:1236 - Siege of Goddard: Sun Dec 29 16:00:00 BRT 2024
+11:10:40,264  INFO DayNightSpawnManager:74 - DayNightSpawnManager: Day/Night handler initialised
+11:10:40,289  INFO Siege:1236 - Siege of Rune: Sat Jan 04 20:00:00 BRT 2025
+11:10:40,293  INFO Siege:1236 - Siege of Schuttgart: Sat Jan 04 20:00:00 BRT 2025
+11:10:40,558  INFO SpawnTable:182 - SpawnTable: Loaded 37240 Npc Spawn Locations. 
+11:10:40,559  INFO SpawnTable:183 - SpawnTable: Spawning completed, total number of NPCs in the world: 37240
+11:10:40,569  INFO SpawnTable:281 - CustomSpawnTable: Loaded 87 Npc Spawn Locations. 
+11:10:40,570  INFO SpawnTable:282 - CustomSpawnTable: Spawning completed, total number of NPCs in the world: 87
+11:10:40,632  INFO RaidBossSpawnManager:129 - RaidBossSpawnManager: Loaded 182 Instances
+11:10:40,634  INFO RaidBossSpawnManager:130 - RaidBossSpawnManager: Scheduled 0 Instances
+11:10:40,639  INFO DayNightSpawnManager:134 - DayNightSpawnManager: Deleted 0 night creatures
+11:10:40,647  INFO DayNightSpawnManager:176 - DayNightSpawnManager: Spawning 232 day creatures
+11:10:40,648  INFO Util:141 - ==========================================================-[ Dimensional Rift ]
+11:10:40,651  INFO DimensionalRiftManager:172 - DimensionalRiftManager: Loaded 7 room types with 56 rooms.
+11:10:40,660  INFO DimensionalRiftManager:280 - DimensionalRiftManager: Loaded 462 dimensional rift spawns, 0 errors.
+11:10:40,660  INFO Util:141 - ======================================================================-[ Misc ]
+11:10:40,672  INFO RecipeTable:88 - RecipeController: Loaded 871 Recipes.
+11:10:40,675  INFO AugmentationData:99 - Initializing AugmentationData.
+11:10:40,708  INFO AugmentationData:120 - AugmentationData: Loaded: 52 augmentation stats.
+11:10:40,710  INFO MercTicketManager:67 - Initializing MercTicketManager
+11:10:40,713  INFO MercTicketManager:738 - Loaded: 0 Mercenary Tickets
+11:10:40,715  INFO PetitionManager:87 - Initializing PetitionManager
+11:10:40,716  INFO CursedWeaponsManager:105 - Initializing CursedWeaponsManager
+11:10:40,727  INFO CursedWeaponsManager:82 - Loaded: 2 cursed weapon(s).
+11:10:40,768  INFO ItemsAutoDestroy:58 - Initializing ItemsAutoDestroy.
+11:10:40,769  INFO Util:141 - =====================================================================-[ Manor ]
+11:10:40,815  INFO L2Manor:385 - ManorManager: Loaded 256 seeds
+11:10:40,819  INFO CastleManorManager:79 - Initializing CastleManorManager
+11:10:40,835  INFO Util:141 - ===================================================================-[ Castles ]
+11:10:40,837  INFO SiegeManager:214 - Initializing SiegeManager
+11:10:40,840  INFO FortSiegeManager:190 - Initializing FortSiegeManager
+11:10:40,842  INFO CrownManager:47 - CrownManager: initialized
+11:10:40,843  INFO Util:141 - ======================================================================-[ Boat ]
+11:10:40,846  INFO BoatManager:58 - Initializing BoatManager
+11:10:40,853  INFO Util:141 - =====================================================================-[ Doors ]
+11:10:40,854  INFO DoorTable:96 - Searching clan halls doors:
+11:10:40,934  INFO DoorTable:121 - DoorTable: Loaded 1001 Door Templates.
+11:10:40,934  INFO Util:141 - ===========================================================-[ Four Sepulchers ]
+11:10:40,941  INFO GrandBossManager:130 - GrandBossManager: Loaded 15 Instances
+11:10:41,039  INFO GrandBossManager:345 - FourSepulchersManager: Beginning in Attack time
+11:10:41,039  INFO Util:141 - ===============================================================-[ Seven Signs ]
+11:10:41,046  INFO SevenSigns:287 - SevenSigns: Currently in the Competition (Quest Event) period!
+11:10:41,046  INFO SevenSigns:1440 - SevenSigns: The Seal of Avarice remains unclaimed.
+11:10:41,046  INFO SevenSigns:1440 - SevenSigns: The Seal of Gnosis remains unclaimed.
+11:10:41,047  INFO SevenSigns:1440 - SevenSigns: The Seal of Strife remains unclaimed.
+11:10:41,047  INFO SevenSigns:301 - SevenSigns: The competition, if the current trend continues, will end in a tie this week.
+11:10:41,048  INFO SevenSigns:325 - SevenSigns: Next period begins in 1 days, 6 hours and 49 mins.
+11:10:41,093  INFO SevenSignsFestival:3393 - SevenSignsFestival: The first Festival of Darkness cycle begins in 2 minute(s).
+11:10:41,093  INFO Util:141 - ===========================================================-[ Olympiad System ]
+11:10:41,096  WARN Olympiad:207 - config/olympiad.cfg cannot be loaded... It will be created on next save or server shutdown..
+11:10:41,099  INFO Olympiad:322 - Olympiad System: Loading Olympiad System....
+11:10:41,099  INFO Olympiad:324 - Olympiad System: Currently in Olympiad Period
+11:10:41,100  INFO Olympiad:334 - Olympiad System: 14449 minutes until period ends
+11:10:41,101  INFO Olympiad:340 - Olympiad System: Next weekly change is in 10079 minutes
+11:10:41,101  INFO Olympiad:344 - Olympiad System: Loaded 0 Nobles
+11:10:41,102  INFO Olympiad:746 - Olympiad System: Competition Period Starts in 0 days, 6 hours and 50 mins.
+11:10:41,102  INFO Olympiad:748 - Olympiad System: Event starts/started : Sun Dec 22 18:00:41 BRT 2024
+11:10:41,105  INFO Hero:216 - Hero System: Loaded 0 Heroes.
+11:10:41,106  INFO Hero:217 - Hero System: Loaded 0 all time Heroes.
+11:10:41,107  INFO Util:141 - =============================================================-[ Access Levels ]
+11:10:41,114  INFO AccessLevels:105 - AccessLevels: Access level with name {} is using reserved master access level {}. Ignoring it.. Master Access 1
+11:10:41,115  INFO AccessLevels:182 - AccessLevels: Master Access Level is 1
+11:10:41,115  INFO AccessLevels:183 - AccessLevels: User Access Level is 0
+11:10:41,117  INFO AdminCommandAccessRights:82 - Admin Access Rights: Loaded 483 Access Rigths from database.
+11:10:41,118  INFO GmListTable:92 - GmListTable: initalized.
+11:10:41,118  INFO Util:141 - ==================================================================-[ Handlers ]
+11:10:41,138  INFO GameServer:155 - ItemHandler: Loaded 2047 handlers.
+11:10:41,154  INFO GameServer:125 - SkillHandler: Loaded 76 handlers.
+11:10:41,195  INFO AdminCommandHandler:194 - AdminCommandHandler: Loaded 500 handlers.
+11:10:41,199  INFO GameServer:86 - UserCommandHandler: Loaded 16 handlers.
+11:10:41,202  INFO GameServer:103 - VoicedCommandHandler: Loaded 14 handlers.
+11:10:41,203  INFO Loader:431 - AutoChatHandler : Loaded 32 handlers in total.
+11:10:41,203  INFO Loader:432 - AutoSpawnHandler : Loaded 129 handlers in total.
+11:10:41,205  INFO Util:141 - ========================================================================-[ AI ]
+11:10:41,206  INFO AILoader:58 - AI load:
+11:10:41,207  INFO AILoader:60 -  - Antharas_l2j
+11:10:41,211  INFO QuestManager:51 - Initializing QuestManager
+11:10:41,212  INFO AILoader:63 -  - Baium_l2j
+11:10:41,214  INFO AILoader:66 -  - Core
+11:10:41,219  INFO AILoader:69 -  - Queen Ant
+11:10:41,222  INFO AILoader:72 -  - Van Halter
+11:10:41,250  INFO AILoader:74 -  - Gordon
+11:10:41,253  INFO AILoader:77 -  - Monastery_l2j
+11:10:41,255  INFO AILoader:80 -  - Transform
+11:10:41,258  INFO AILoader:82 -  - Fairy Trees
+11:10:41,260  INFO AILoader:84 -  - Summon Minions
+11:10:41,262  INFO AILoader:86 -  - Zombie Gatekeepers
+11:10:41,264  INFO AILoader:88 -  - Ice Fairy Sirra
+11:10:41,267  INFO GrandBossManager:268 - GrandBossManager: Updated High Priestess van Halter(29062) status to 1
+11:10:41,280  INFO AILoader:90 -  - Golkonda
+11:10:41,283  INFO AILoader:92 -  - Hallate
+11:10:41,283  INFO AILoader:94 -  - Kernon
+11:10:41,284  INFO AILoader:96 -  - Varka/Ketra Ally
+11:10:41,286  INFO AILoader:98 -  - Barakiel
+11:10:41,286  INFO AILoader:101 -  - Orfen
+11:10:41,288  INFO AILoader:104 -  - Zaken_l2j
+11:10:41,293  INFO AILoader:107 -  - Frintezza_l2j
+11:10:41,300  INFO AILoader:110 -  - Valakas_l2j
+11:10:41,303  INFO Util:141 - ===================================================================-[ Scripts ]
+11:10:42,468  INFO QuestManager:127 - Replaced: SagasSuperclass with a new version
+11:10:45,195  INFO Loader:488 - Compiled Scripts Cache is disabled.
+11:10:45,198  INFO FaenorScriptEngine:77 - [FeanorScriptEngine] Loading Packages ...
+11:10:45,199  INFO FaenorScriptEngine:93 - [FeanorScriptEngine] No Packages Loaded ...
+11:10:45,218  INFO Util:141 - ====================================================================-[ Quests ]
+11:10:45,218  INFO QuestManager:95 - Loaded: 457 quests
+11:10:45,219  INFO Util:141 - ===============================================================-[ Game Server ]
+11:10:45,224  INFO Loader:525 - IdFactory: Free ObjectID's remaining: 1879005757
+11:10:45,229  INFO Util:141 - ===============================================================-[ Custom Mods ]
+11:10:45,231  INFO CoupleManager:57 - Initializing CoupleManager
+11:10:45,233  INFO CoupleManager:95 - Loaded: 0 couples(s)
+11:10:45,236  INFO PowerPak:64 - Buffer is Enabled.
+11:10:45,242  INFO BuffTable:116 - Loaded 112 buff templates
+11:10:45,249  INFO BufferSkillsTable:109 - BufferSkillsTable: Loaded 91 skills and 9 types.
+11:10:45,253  INFO PowerPak:100 - Global Gatekeeper is Enabled.
+11:10:45,255  INFO PowerPak:116 - GM Shop is Enabled.
+11:10:45,257  INFO PowerPak:127 - Raid Info is Enabled.
+11:10:45,257  INFO Util:141 - ==============================================================-[ EventManager ]
+11:10:45,268  INFO Loader:560 - TVT Event is Enabled.
+11:10:45,269  INFO OfflineTradeTable:181 - Loading offline traders...
+11:10:45,273  INFO OfflineTradeTable:286 - Loaded: 0 offline trader(s)
+11:10:45,274  INFO Util:141 - ================================================================-[ Protection ]
+11:10:45,275  INFO Loader:575 - Check skills on enter actived.
+11:10:45,275  INFO Loader:578 - Check bad name on enter actived.
+11:10:45,276  INFO Loader:581 - Check OverEnchant items on enter actived.
+11:10:45,276  INFO Loader:584 - Bypass Validation actived.
+11:10:45,277  INFO Loader:587 - L2Walker protection actived.
+11:10:45,278  INFO Loader:590 - Bot Protection actived.
+11:10:45,280  INFO Loader:593 - Full packets flood protector actived.
+11:10:45,283  INFO Loader:596 - Client flood protection actived.
+11:10:45,283  INFO Util:141 - ======================================================================-[ Info ]
+11:10:45,284  INFO Loader:599 - Operating System: Windows 10 10.0 amd64
+11:10:45,285  INFO Loader:600 - Available CPUs: 8
+11:10:45,285  INFO Loader:601 - Maximum Numbers of Connected Players: 1000
+11:10:45,286  INFO Loader:602 - GameServer Started, free memory 619 Mb of 1024 Mb
+11:10:45,287  INFO Loader:603 - Used memory: 404 MB
+11:10:45,288  INFO Util:141 - =============================================================-[ Java specific ]
+11:10:45,289  INFO Loader:606 - JRE name: BellSoft
+11:10:45,290  INFO Loader:607 - JRE specification version: 1.8
+11:10:45,292  INFO Loader:608 - JRE version: 1.8.0_392
+11:10:45,292  INFO Loader:609 - --- Detecting Java Virtual Machine (JVM)
+11:10:45,293  INFO Loader:610 - JVM installation directory: C:\Program Files\BellSoft\LibericaJDK-8\jre
+11:10:45,293  INFO Loader:611 - JVM Avaible Memory(RAM): 1024 MB
+11:10:45,293  INFO Loader:612 - JVM specification version: 1.8
+11:10:45,294  INFO Loader:613 - JVM specification vendor: Oracle Corporation
+11:10:45,295  INFO Loader:614 - JVM specification name: Java Virtual Machine Specification
+11:10:45,295  INFO Loader:615 - JVM implementation version: 25.392-b09
+11:10:45,296  INFO Loader:616 - JVM implementation vendor: BellSoft
+11:10:45,296  INFO Loader:617 - JVM implementation name: OpenJDK 64-Bit Server VM
+11:10:45,296  INFO Util:141 - ====================================================================-[ Status ]
+11:10:46,112  INFO Loader:621 - Server Loaded in 16 seconds
+11:10:46,114  INFO Util:141 - ====================================================================-[ Telnet ]
+11:10:46,114  INFO Loader:633 - Telnet server is disabled.
+11:10:46,114  INFO Util:141 - =====================================================================-[ Login ]
+11:10:46,121  INFO LoginServerThread:155 - Connecting to login on 127.0.0.1:9014
+11:10:46,167  INFO GameServerThread:661 - Updated Gameserver [1] L2JPrime IP's:
+11:10:46,167  INFO GameServerThread:665 - InternalIP: 127.0.0.1
+11:10:46,168  INFO GameServerThread:670 - ExternalIP: 127.0.0.1
+11:10:46,169  INFO LoginServerThread:282 - Registered on login as Server 1 : L2JPrime
+11:12:38,793  INFO GameServerThread:132 - LoginServerThread: Login terminated the connection.
+11:12:38,794  INFO GameServerThread:216 - Server [1] L2JPrime is now set as disconnected
+11:25:48,028  INFO Util:141 - ======================================================================-[ Team ]
+11:25:48,030  INFO L2Prime:35 -                                                  		
+11:25:48,030  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:25:48,030  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:25:48,030  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:25:48,030  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:25:48,032  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:25:48,032  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:25:48,102  INFO Config:3996 - Loaded 20 Question Words.
+11:25:48,103  INFO Util:141 - ==================================================================-[ Database ]
+11:25:48,624 ERROR L2DatabaseFactory_c3p0:108 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: No timezone mapping entry for 'GMT-3null'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.ConnectionImpl.configureTimezone(ConnectionImpl.java:1974)
+	at com.mysql.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:3231)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2233)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:51)
+	at com.l2jprime.gameserver.GameServer.main(GameServer.java:209)
+11:31:27,674  INFO Util:141 - ======================================================================-[ Team ]
+11:31:27,676  INFO L2Prime:35 -                                                  		
+11:31:27,676  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:31:27,677  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:31:27,677  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:31:27,677  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:31:27,678  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:31:27,679  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:31:27,748  INFO Config:3944 - Loaded 20 Question Words.
+11:31:27,749  INFO Util:141 - ==================================================================-[ Database ]
+11:31:28,304  INFO Loader:210 - L2DatabaseFactory: loaded.
+11:31:28,304  INFO Util:141 - ===================================================================-[ Threads ]
+11:31:28,312  INFO HtmCache:82 - Cache[HTML]: Running lazy cache
+11:31:28,315  INFO CrestCache:154 - Cache[Crest]: 0,000MB on 0 files loaded. (Forget Time: 300s , Capacity: 50)
+11:31:28,322  INFO L2ScriptEngineManager:89 - Initializing Script Engine Manager
+11:31:28,789  INFO L2ScriptEngineManager:118 - Script Engine: jython 2.2.1 - Language: python - Language Version: 2.2.1
+11:31:28,816  INFO L2ScriptEngineManager:118 - Script Engine: BeanShell Engine 1.1 - Language: BeanShell - Language Version: 2.0b5
+11:31:29,042  INFO L2ScriptEngineManager:118 - Script Engine: Oracle Nashorn 1.8.0_392 - Language: ECMAScript - Language Version: ECMA - 262 Edition 5.1
+11:31:29,049  INFO L2ScriptEngineManager:118 - Script Engine: java 1.6 - Language: java - Language Version: 1.6
+11:31:29,122  INFO Util:141 - =====================================================================-[ World ]
+11:31:29,125  INFO L2World:971 - L2World: Setting up World Regions
+11:31:29,149  INFO L2World:999 - L2World: (87x128) World Region Grid set up.
+11:31:29,162  INFO Announcements:192 - Announcements: Loaded 2 Announcements.
+11:31:29,167  INFO AutoAnnouncementHandler:84 - GameServer: Loaded 0 Auto Announcements.
+11:31:29,172  INFO IdFactory:136 - Updated characters online status.
+11:31:29,204  INFO BitSetIDFactory:79 - IDFactory: 102912 id's available.
+11:31:29,211  INFO StaticObjects:60 - StaticObject: Loaded 30 StaticObject Templates.
+11:31:29,224  INFO TeleportLocationTable:94 - TeleportLocationTable: Loaded 828 Teleport Location Templates
+11:31:29,227  INFO TeleportLocationTable:134 - TeleportLocationTable: Loaded {} Custom Teleport Location Templates. 178
+11:31:29,260  INFO ExperienceData:95 - ExperienceData: Loaded 87 levels
+11:31:29,261  INFO ExperienceData:96 - ExperienceData: Max Player Level is: 80
+11:31:29,262  INFO ExperienceData:97 - ExperienceData: Max Pet Level is: 80
+11:31:29,263  INFO DuelManager:56 - Initializing DuelManager
+11:31:29,268  INFO ClassDamageManager:109 - Loaded 31 classes Damages configurations
+11:31:29,268  INFO AutoSaveManager:56 - Initializing AutoSaveManager
+11:31:29,270  INFO Util:141 - ====================================================================-[ Skills ]
+11:31:30,870  INFO SkillsEngine:123 - SkillsEngine: Loaded 30515 Skill templates from XML files.
+11:31:30,872  INFO SkillTreeTable:76 - SkillSpellbookTable: Loaded 334 spellbooks
+11:31:30,873  INFO Loader:272 - Skills: All skills loaded.
+11:31:30,873  INFO Util:141 - =====================================================================-[ Items ]
+11:31:31,004  INFO ItemTable:300 - ItemTable: Loaded 1014 Armors.
+11:31:31,016  INFO ItemTable:306 - ItemTable: Loaded 6892 Items.
+11:31:31,138  INFO ItemTable:312 - ItemTable: Loaded 1313 Weapons.
+11:31:31,139  INFO ItemTable:651 - Highest item id used: 20006
+11:31:31,147  INFO ArmorSetsTable:87 - Loaded: 51 armor sets.
+11:31:31,148  INFO CustomArmorSetsTable:74 - ArmorSetsTable: Loaded custom armor sets.
+11:31:31,168  INFO ExtractableItemsData:152 - Extractable items data: Loaded 334 extractable items!
+11:31:31,171  INFO SummonItemsData:139 - Summon items data: Loaded 12 summon items.
+11:31:31,176  INFO SkillTreeTable:178 - FishTable: Loaded 270 Fishes.
+11:31:31,176  INFO Util:141 - =======================================================================-[ Npc ]
+11:31:31,177  INFO NpcWalkerRoutesTable:57 - Initializing Walkers Routes Table.
+11:31:31,179  INFO NpcWalkerRoutesTable:124 - WalkerRoutesTable: Loaded 167 Npc Walker Routes.
+11:31:31,393  INFO NpcTable:736 - NpcTable: Loaded 6592 Npc Templates.
+11:31:31,396  INFO NpcTable:736 - NpcTable: Loaded 6610 Npc Templates.
+11:31:31,425  INFO NpcTable:305 - CustomDropList : Added 0 custom droplist
+11:31:31,506  INFO NpcTable:445 - NpcTable: Loaded 447 Minions.
+11:31:31,507  INFO Util:141 - ================================================================-[ Characters ]
+11:31:31,514  INFO ForumsBBSManager:117 - Loaded 4 forums. Last forum id used: 4
+11:31:31,516  INFO ClanTable:154 - Restored 0 clans from the database.
+11:31:31,523  INFO CharTemplateTable:276 - CharTemplateTable: Loaded 89 Character Templates.
+11:31:31,526  INFO LevelUpData:106 - LevelUpData: Loaded 89 Character Level Up Templates.
+11:31:31,529  INFO HennaTable:115 - HennaTable: Loaded 180 Templates.
+11:31:31,566  INFO HennaTreeTable:140 - HennaTreeTable: Loaded 7128 Henna Tree Templates.
+11:31:31,568  INFO HennaTable:170 - Helper Buff Table: Loaded 14 templates
+11:31:31,569  INFO Util:141 - ===================================================================-[ Geodata ]
+11:31:31,571  INFO GeoData:40 - Geodata Engine: Disabled.
+11:31:31,571  INFO Util:141 - ===================================================================-[ Economy ]
+11:31:31,665  WARN TradeController:309 - L2TradeList 363 itemId  1856 has an ADENA sell price lower then reference price.. Automatically Updating it..
+11:31:31,665  WARN TradeController:309 - L2TradeList 364 itemId  1856 has an ADENA sell price lower then reference price.. Automatically Updating it..
+11:31:31,788  INFO TradeController:367 - TradeController: Loaded 508 Buylists.
+11:31:31,788  INFO TradeController:368 - TradeController: Loaded 132 Limited Buylists.
+11:31:31,792  INFO TradeController:588 - TradeController: Loaded 0 Custom Buylists.
+11:31:31,934  INFO Loader:334 - Multisell: loaded.
+11:31:31,934  INFO Util:141 - ================================================================-[ Clan Halls ]
+11:31:31,936  INFO ClanHallManager:72 - Initializing ClanHallManager
+11:31:31,969  INFO ClanHallManager:122 - Loaded: 0 clan halls
+11:31:31,970  INFO ClanHallManager:123 - Loaded: 44 free clan halls
+11:31:31,973  INFO FortressOfResistance:151 - Fortress of Resistanse: siege will start the 27/12/24 21:00
+11:31:31,975  INFO DevastatedCastle:161 - Devastated Castle: siege will start the 23/12/24 18:00
+11:31:31,977  INFO BanditStrongholdSiege:78 - SiegeManager of Bandits Stronghold
+11:31:31,979  INFO AuctionManager:130 - Initializing AuctionManager
+11:31:32,000  INFO AuctionManager:159 - Loaded: 38 auction(s)
+11:31:32,000  INFO Util:141 - ======================================================================-[ Zone ]
+11:31:32,018  INFO ZoneData:105 - Loading zones...
+11:31:32,065  INFO ArenaManager:39 - Initializing ArenaManager
+11:31:32,132  INFO TownManager:42 - Initializing TownManager
+11:31:32,273  INFO OlympiadStadiaManager:40 - Initializing OlympiadStadiaManager
+11:31:32,409  INFO CastleManager:117 - Initializing CastleManager
+11:31:32,425  INFO CastleManager:133 - Loaded: 9 castles
+11:31:32,456  INFO GrandBossManager:83 - Initializing GrandBossManager
+11:31:32,457  INFO GrandBossManager:130 - GrandBossManager: Loaded 15 Instances
+11:31:32,571  INFO FishingZoneManager:39 - Initializing FishingZoneManager
+11:31:33,139  INFO FortManager:56 - Initializing FortManager
+11:31:33,164  INFO FortManager:114 - Loaded: 21 fortress
+11:31:33,720  INFO GrandBossManager:184 - GrandBossManager: Initialized 17 Grand Boss Zones
+11:31:33,721  INFO ZoneData:608 - Done: loaded 565 zones.
+11:31:33,722  INFO Util:141 - =================================================================-[ Spawnlist ]
+11:31:33,771  INFO CustomNpcInstanceManager:203 - CustomNpcInstanceManager: loaded 4 NPC to PC polymorphs.
+11:31:33,981  INFO Siege:1260 - Siege of Dion: Sat Jan 04 20:00:00 BRT 2025
+11:31:34,094  INFO Siege:1260 - Siege of Oren: Sun Dec 29 16:00:00 BRT 2024
+11:31:34,694  INFO Siege:1260 - Siege of Gludio: Sat Jan 04 20:00:00 BRT 2025
+11:31:34,697  INFO Siege:1260 - Siege of Giran: Sun Dec 29 16:00:00 BRT 2024
+11:31:34,698  INFO Siege:1260 - Siege of Innadril: Sun Dec 29 16:00:00 BRT 2024
+11:31:34,699  INFO Siege:1260 - Siege of Aden: Sat Jan 04 20:00:00 BRT 2025
+11:31:34,746  INFO Siege:1260 - Siege of Goddard: Sun Dec 29 16:00:00 BRT 2024
+11:31:34,756  INFO DayNightSpawnManager:74 - DayNightSpawnManager: Day/Night handler initialised
+11:31:34,771  INFO Siege:1260 - Siege of Rune: Sat Jan 04 20:00:00 BRT 2025
+11:31:34,772  INFO Siege:1260 - Siege of Schuttgart: Sat Jan 04 20:00:00 BRT 2025
+11:31:34,972  INFO SpawnTable:182 - SpawnTable: Loaded 37240 Npc Spawn Locations. 
+11:31:34,972  INFO SpawnTable:183 - SpawnTable: Spawning completed, total number of NPCs in the world: 37240
+11:31:34,981  INFO SpawnTable:281 - CustomSpawnTable: Loaded 87 Npc Spawn Locations. 
+11:31:34,981  INFO SpawnTable:282 - CustomSpawnTable: Spawning completed, total number of NPCs in the world: 87
+11:31:35,026  INFO RaidBossSpawnManager:129 - RaidBossSpawnManager: Loaded 182 Instances
+11:31:35,027  INFO RaidBossSpawnManager:130 - RaidBossSpawnManager: Scheduled 0 Instances
+11:31:35,030  INFO DayNightSpawnManager:134 - DayNightSpawnManager: Deleted 0 night creatures
+11:31:35,035  INFO DayNightSpawnManager:176 - DayNightSpawnManager: Spawning 232 day creatures
+11:31:35,036  INFO Util:141 - ==========================================================-[ Dimensional Rift ]
+11:31:35,039  INFO DimensionalRiftManager:180 - DimensionalRiftManager: Loaded 7 room types with 56 rooms.
+11:31:35,044  INFO DimensionalRiftManager:290 - DimensionalRiftManager: Loaded 462 dimensional rift spawns, 0 errors.
+11:31:35,044  INFO Util:141 - ======================================================================-[ Misc ]
+11:31:35,053  INFO RecipeTable:88 - RecipeController: Loaded 871 Recipes.
+11:31:35,055  INFO AugmentationData:99 - Initializing AugmentationData.
+11:31:35,083  INFO AugmentationData:120 - AugmentationData: Loaded: 52 augmentation stats.
+11:31:35,085  INFO MercTicketManager:67 - Initializing MercTicketManager
+11:31:35,088  INFO MercTicketManager:758 - Loaded: 0 Mercenary Tickets
+11:31:35,090  INFO PetitionManager:87 - Initializing PetitionManager
+11:31:35,092  INFO CursedWeaponsManager:107 - Initializing CursedWeaponsManager
+11:31:35,097  INFO CursedWeaponsManager:84 - Loaded: 2 cursed weapon(s).
+11:31:35,115  INFO ItemsAutoDestroy:58 - Initializing ItemsAutoDestroy.
+11:31:35,116  INFO Util:141 - =====================================================================-[ Manor ]
+11:31:35,119  INFO L2Manor:417 - ManorManager: Loaded 256 seeds
+11:31:35,120  INFO CastleManorManager:79 - Initializing CastleManorManager
+11:31:35,124  INFO Util:141 - ===================================================================-[ Castles ]
+11:31:35,125  INFO SiegeManager:222 - Initializing SiegeManager
+11:31:35,127  INFO FortSiegeManager:198 - Initializing FortSiegeManager
+11:31:35,128  INFO CrownManager:47 - CrownManager: initialized
+11:31:35,128  INFO Util:141 - ======================================================================-[ Boat ]
+11:31:35,129  INFO BoatManager:58 - Initializing BoatManager
+11:31:35,133  INFO Util:141 - =====================================================================-[ Doors ]
+11:31:35,134  INFO DoorTable:96 - Searching clan halls doors:
+11:31:35,175  INFO DoorTable:121 - DoorTable: Loaded 1001 Door Templates.
+11:31:35,176  INFO Util:141 - ===========================================================-[ Four Sepulchers ]
+11:31:35,180  INFO GrandBossManager:130 - GrandBossManager: Loaded 15 Instances
+11:31:35,236  INFO GrandBossManager:345 - FourSepulchersManager: Beginning in Attack time
+11:31:35,237  INFO Util:141 - ===============================================================-[ Seven Signs ]
+11:31:35,281  INFO SevenSigns:287 - SevenSigns: Currently in the Competition (Quest Event) period!
+11:31:35,301  INFO SevenSigns:1486 - SevenSigns: The Seal of Avarice remains unclaimed.
+11:31:35,302  INFO SevenSigns:1486 - SevenSigns: The Seal of Gnosis remains unclaimed.
+11:31:35,302  INFO SevenSigns:1486 - SevenSigns: The Seal of Strife remains unclaimed.
+11:31:35,303  INFO SevenSigns:303 - SevenSigns: The competition, if the current trend continues, will end in a tie this week.
+11:31:35,304  INFO SevenSigns:327 - SevenSigns: Next period begins in 1 days, 6 hours and 28 mins.
+11:31:35,349  INFO SevenSignsFestival:3395 - SevenSignsFestival: The first Festival of Darkness cycle begins in 2 minute(s).
+11:31:35,349  INFO Util:141 - ===========================================================-[ Olympiad System ]
+11:31:35,352  WARN Olympiad:211 - config/olympiad.cfg cannot be loaded... It will be created on next save or server shutdown..
+11:31:35,354  INFO Olympiad:332 - Olympiad System: Loading Olympiad System....
+11:31:35,355  INFO Olympiad:335 - Olympiad System: Currently in Olympiad Period
+11:31:35,355  INFO Olympiad:352 - Olympiad System: 14428 minutes until period ends
+11:31:35,356  INFO Olympiad:358 - Olympiad System: Next weekly change is in 10079 minutes
+11:31:35,357  INFO Olympiad:362 - Olympiad System: Loaded 0 Nobles
+11:31:35,358  INFO Olympiad:785 - Olympiad System: Competition Period Starts in 0 days, 6 hours and 28 mins.
+11:31:35,358  INFO Olympiad:787 - Olympiad System: Event starts/started : Sun Dec 22 18:00:35 BRT 2024
+11:31:35,362  INFO Hero:218 - Hero System: Loaded 0 Heroes.
+11:31:35,362  INFO Hero:219 - Hero System: Loaded 0 all time Heroes.
+11:31:35,362  INFO Util:141 - =============================================================-[ Access Levels ]
+11:31:35,364  INFO AccessLevels:113 - AccessLevels: Access level with name {} is using reserved master access level {}. Ignoring it.. Master Access 1
+11:31:35,365  INFO AccessLevels:190 - AccessLevels: Master Access Level is 1
+11:31:35,365  INFO AccessLevels:191 - AccessLevels: User Access Level is 0
+11:31:35,367  INFO AdminCommandAccessRights:88 - Admin Access Rights: Loaded 483 Access Rigths from database.
+11:31:35,368  INFO GmListTable:92 - GmListTable: initalized.
+11:31:35,368  INFO Util:141 - ==================================================================-[ Handlers ]
+11:31:35,383  INFO GameServer:155 - ItemHandler: Loaded 2047 handlers.
+11:31:35,395  INFO GameServer:125 - SkillHandler: Loaded 76 handlers.
+11:31:35,436  INFO AdminCommandHandler:194 - AdminCommandHandler: Loaded 500 handlers.
+11:31:35,440  INFO GameServer:88 - UserCommandHandler: Loaded 16 handlers.
+11:31:35,443  INFO GameServer:103 - VoicedCommandHandler: Loaded 14 handlers.
+11:31:35,443  INFO Loader:437 - AutoChatHandler : Loaded 32 handlers in total.
+11:31:35,443  INFO Loader:438 - AutoSpawnHandler : Loaded 129 handlers in total.
+11:31:35,445  INFO Util:141 - ========================================================================-[ AI ]
+11:31:35,446  INFO AILoader:58 - AI load:
+11:31:35,446  INFO AILoader:60 -  - Antharas_l2j
+11:31:35,449  INFO QuestManager:51 - Initializing QuestManager
+11:31:35,450  INFO AILoader:63 -  - Baium_l2j
+11:31:35,453  INFO AILoader:66 -  - Core
+11:31:35,459  INFO AILoader:69 -  - Queen Ant
+11:31:35,462  INFO AILoader:72 -  - Van Halter
+11:31:35,472  INFO GrandBossManager:278 - GrandBossManager: Updated High Priestess van Halter(29062) status to 1
+11:31:35,473  INFO AILoader:74 -  - Gordon
+11:31:35,474  INFO AILoader:77 -  - Monastery_l2j
+11:31:35,475  INFO AILoader:80 -  - Transform
+11:31:35,476  INFO AILoader:82 -  - Fairy Trees
+11:31:35,476  INFO AILoader:84 -  - Summon Minions
+11:31:35,477  INFO AILoader:86 -  - Zombie Gatekeepers
+11:31:35,478  INFO AILoader:88 -  - Ice Fairy Sirra
+11:31:35,486  INFO AILoader:90 -  - Golkonda
+11:31:35,486  INFO AILoader:92 -  - Hallate
+11:31:35,487  INFO AILoader:94 -  - Kernon
+11:31:35,487  INFO AILoader:96 -  - Varka/Ketra Ally
+11:31:35,488  INFO AILoader:98 -  - Barakiel
+11:31:35,488  INFO AILoader:101 -  - Orfen
+11:31:35,491  INFO AILoader:104 -  - Zaken_l2j
+11:31:35,494  INFO AILoader:107 -  - Frintezza_l2j
+11:31:35,500  INFO AILoader:110 -  - Valakas_l2j
+11:31:35,503  INFO Util:141 - ===================================================================-[ Scripts ]
+11:31:36,301  INFO QuestManager:133 - Replaced: SagasSuperclass with a new version
+11:31:38,604  INFO Loader:497 - Compiled Scripts Cache is disabled.
+11:31:38,607  INFO FaenorScriptEngine:77 - [FeanorScriptEngine] Loading Packages ...
+11:31:38,608  INFO FaenorScriptEngine:93 - [FeanorScriptEngine] No Packages Loaded ...
+11:31:38,617  INFO Util:141 - ====================================================================-[ Quests ]
+11:31:38,618  INFO QuestManager:99 - Loaded: 457 quests
+11:31:38,618  INFO Util:141 - ===============================================================-[ Game Server ]
+11:31:38,619  INFO Loader:541 - IdFactory: Free ObjectID's remaining: 1879005796
+11:31:38,620  INFO Util:141 - ===============================================================-[ Custom Mods ]
+11:31:38,621  INFO CoupleManager:57 - Initializing CoupleManager
+11:31:38,621  INFO CoupleManager:95 - Loaded: 0 couples(s)
+11:31:38,624  INFO PowerPak:64 - Buffer is Enabled.
+11:31:38,626  INFO BuffTable:116 - Loaded 112 buff templates
+11:31:38,630  INFO BufferSkillsTable:117 - BufferSkillsTable: Loaded 91 skills and 9 types.
+11:31:38,631  INFO PowerPak:100 - Global Gatekeeper is Enabled.
+11:31:38,632  INFO PowerPak:116 - GM Shop is Enabled.
+11:31:38,633  INFO PowerPak:127 - Raid Info is Enabled.
+11:31:38,633  INFO Util:141 - ==============================================================-[ EventManager ]
+11:31:38,639  INFO Loader:587 - TVT Event is Enabled.
+11:31:38,640  INFO OfflineTradeTable:191 - Loading offline traders...
+11:31:38,640  INFO OfflineTradeTable:304 - Loaded: 0 offline trader(s)
+11:31:38,641  INFO Util:141 - ================================================================-[ Protection ]
+11:31:38,641  INFO Loader:612 - Check skills on enter actived.
+11:31:38,641  INFO Loader:617 - Check bad name on enter actived.
+11:31:38,642  INFO Loader:622 - Check OverEnchant items on enter actived.
+11:31:38,642  INFO Loader:627 - Bypass Validation actived.
+11:31:38,642  INFO Loader:632 - L2Walker protection actived.
+11:31:38,643  INFO Loader:637 - Bot Protection actived.
+11:31:38,644  INFO Loader:642 - Full packets flood protector actived.
+11:31:38,644  INFO Loader:647 - Client flood protection actived.
+11:31:38,645  INFO Util:141 - ======================================================================-[ Info ]
+11:31:38,645  INFO Loader:651 - Operating System: Windows 10 10.0 amd64
+11:31:38,646  INFO Loader:652 - Available CPUs: 8
+11:31:38,646  INFO Loader:653 - Maximum Numbers of Connected Players: 1000
+11:31:38,647  INFO Loader:654 - GameServer Started, free memory 654 Mb of 1024 Mb
+11:31:38,648  INFO Loader:655 - Used memory: 369 MB
+11:31:38,649  INFO Util:141 - =============================================================-[ Java specific ]
+11:31:38,649  INFO Loader:658 - JRE name: BellSoft
+11:31:38,650  INFO Loader:659 - JRE specification version: 1.8
+11:31:38,650  INFO Loader:660 - JRE version: 1.8.0_392
+11:31:38,650  INFO Loader:661 - --- Detecting Java Virtual Machine (JVM)
+11:31:38,651  INFO Loader:662 - JVM installation directory: C:\Program Files\BellSoft\LibericaJDK-8\jre
+11:31:38,651  INFO Loader:663 - JVM Avaible Memory(RAM): 1024 MB
+11:31:38,651  INFO Loader:664 - JVM specification version: 1.8
+11:31:38,652  INFO Loader:665 - JVM specification vendor: Oracle Corporation
+11:31:38,652  INFO Loader:666 - JVM specification name: Java Virtual Machine Specification
+11:31:38,652  INFO Loader:667 - JVM implementation version: 25.392-b09
+11:31:38,653  INFO Loader:668 - JVM implementation vendor: BellSoft
+11:31:38,653  INFO Loader:669 - JVM implementation name: OpenJDK 64-Bit Server VM
+11:31:38,653  INFO Util:141 - ====================================================================-[ Status ]
+11:31:39,418  INFO Loader:673 - Server Loaded in 11 seconds
+11:31:39,420  INFO Util:141 - ====================================================================-[ Telnet ]
+11:31:39,420  INFO Loader:685 - Telnet server is disabled.
+11:31:39,420  INFO Util:141 - =====================================================================-[ Login ]
+11:31:39,426  INFO LoginServerThread:155 - Connecting to login on 127.0.0.1:9014
+11:31:41,453  INFO LoginServerThread:412 - Deconnected from Login, Trying to reconnect..
+11:31:46,454  INFO LoginServerThread:155 - Connecting to login on 127.0.0.1:9014
+11:31:47,351  INFO Util:141 - ======================================================================-[ Team ]
+11:31:47,353  INFO L2Prime:35 -                                                  		
+11:31:47,354  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+11:31:47,354  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+11:31:47,355  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+11:31:47,355  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+11:31:47,356  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+11:31:47,356  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+11:31:47,385  INFO Util:141 - ==================================================================-[ Database ]
+11:31:47,956  INFO Util:141 - ===========================================================-[ LoginController ]
+11:31:48,339  INFO LoginController:176 - Cached 10 KeyPairs for RSA communication
+11:31:48,362  INFO LoginController:232 - Stored 20 keys for Blowfish communication
+11:31:48,370  INFO GameServerTable:96 - Loaded 127 server names
+11:31:48,374  INFO GameServerTable:99 - Loaded 1 registered Game Servers
+11:31:48,454  INFO GameServerTable:102 - Cached 10 RSA keys for Game Server communication.
+11:31:48,484  INFO LoginServerThread:412 - Deconnected from Login, Trying to reconnect..
+11:31:48,507  INFO L2LoginServer:219 - Listening for GameServers on 127.0.0.1:9014
+11:31:48,508  INFO L2LoginServer:231 - Login Server ready on *:2106
+11:31:48,510  INFO Config:4161 - Loaded 2 IP Bans.
+11:31:53,484  INFO LoginServerThread:155 - Connecting to login on 127.0.0.1:9014
+11:31:53,521  INFO GameServerThread:669 - Updated Gameserver [1] L2JPrime IP's:
+11:31:53,521  INFO GameServerThread:673 - InternalIP: 127.0.0.1
+11:31:53,521  INFO GameServerThread:678 - ExternalIP: 127.0.0.1
+11:31:53,523  INFO LoginServerThread:288 - Registered on login as Server 1 : L2JPrime
+11:32:21,088  INFO GameServerThread:132 - LoginServerThread: Login terminated the connection.
+11:32:21,088  INFO GameServerThread:218 - Server [1] L2JPrime is now set as disconnected

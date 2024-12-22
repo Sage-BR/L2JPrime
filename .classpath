@@ -6,7 +6,6 @@
 			<accessrule kind="accessible" pattern="com/sun/net/httpserver/**"/>
 		</accessrules>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="lib" path="lib/bsh-2.0b5.jar"/>
 	<classpathentry kind="lib" path="lib/bsh-engine.jar"/>
 	<classpathentry kind="lib" path="lib/ecj-3.6.1.jar"/>
@@ -18,7 +17,6 @@
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.49.jar"/>
 	<classpathentry kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
 	<classpathentry kind="lib" path="lib/c3p0-0.9.5.5.jar"/>
-	<classpathentry kind="lib" path="lib/bonecp-0.7.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/google-collect-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/mchange-commons-java-0.2.19.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.4.jar"/>
