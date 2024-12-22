@@ -1,0 +1,78 @@
+10:17:10,434  INFO Util:141 - ======================================================================-[ Team ]
+10:17:10,436  INFO L2Prime:35 -                                                  		
+10:17:10,436  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+10:17:10,436  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+10:17:10,438  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+10:17:10,438  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+10:17:10,438  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+10:17:10,438  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+10:17:10,469  INFO Util:141 - ==================================================================-[ Database ]
+10:17:11,053 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: Unable to load authentication plugin 'auth_gssapi_client'.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:869)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:865)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1743)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.loginserver.L2LoginServer.<init>(L2LoginServer.java:132)
+	at com.l2jprime.loginserver.L2LoginServer.main(L2LoginServer.java:61)
+10:17:15,356  INFO Util:141 - ======================================================================-[ Team ]
+10:17:15,357  INFO L2Prime:35 -                                                  		
+10:17:15,358  INFO L2Prime:36 -          		##### ##### ### ##   ## #######         
+10:17:15,358  INFO L2Prime:37 -          		## ## ## ## # # ### ### ####            
+10:17:15,361  INFO L2Prime:38 -          		##### ##### ### ####### #######         
+10:17:15,361  INFO L2Prime:39 -          		##    ###   ### ## # ## ####            
+10:17:15,361  INFO L2Prime:40 -          		##    ## ## ### ##   ## #######         
+10:17:15,362  INFO L2Prime:41 -               	   		  Jesus te Ama!                 
+10:17:15,393  INFO Util:141 - ==================================================================-[ Database ]
+10:17:15,951 ERROR L2DatabaseFactory_c3p0:102 - Couldn't init DB connection, im dead x.x
+java.sql.SQLException: Unable to load authentication plugin 'auth_gssapi_client'.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:869)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:865)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1743)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:161)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:147)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.initializeAutomaticTestTable(C3P0PooledConnectionPoolManager.java:1000)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.createPooledConnectionPool(C3P0PooledConnectionPoolManager.java:921)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:397)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:414)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140)
+	at com.l2jprime.util.database.L2DatabaseFactory_c3p0.<init>(L2DatabaseFactory_c3p0.java:90)
+	at com.l2jprime.util.database.L2DatabaseFactory.getInstance(L2DatabaseFactory.java:59)
+	at com.l2jprime.loginserver.L2LoginServer.<init>(L2LoginServer.java:132)
+	at com.l2jprime.loginserver.L2LoginServer.main(L2LoginServer.java:61)
