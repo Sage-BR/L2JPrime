@@ -113,33 +113,38 @@ public class L2DatabaseFactory_c3p0 extends L2DatabaseFactory
 	@Override
 	public void shutdown()
 	{
-		try
-		{
-			// sleep 10 seconds before the final source shutdown
-			Thread.sleep(10000);
-		}
-		catch (final Exception e)
-		{
-			// nothing
-		}
+	    try
+	    {
+	        // Sleep 10 seconds before the final source shutdown
+	        Thread.sleep(10000);
+	    }
+	    catch (final Exception e)
+	    {
+	        // Optional: log the exception if you want to track interruptions during the sleep
+	        LOGGER.error("Thread sleep interrupted", e);
+	    }
 
-		try
-		{
-			_source.close();
-		}
-		catch (final Exception e)
-		{
-			LOGGER.equals(e);
-		}
-		try
-		{
-			_source = null;
-		}
-		catch (final Exception e)
-		{
-			LOGGER.equals(e);
-		}
+	    try
+	    {
+	        _source.close();
+	    }
+	    catch (final Exception e)
+	    {
+	        // Log the exception while closing the source
+	        LOGGER.error("Error occurred while closing the source", e);
+	    }
+
+	    try
+	    {
+	        _source = null;
+	    }
+	    catch (final Exception e)
+	    {
+	        // Setting a field to null shouldn't throw an exception, but log it just in case
+	        LOGGER.error("Error occurred while nullifying the source", e);
+	    }
 	}
+
 
 	@Override
 	public Connection getConnection(final boolean checkclose)
