@@ -1114,7 +1114,6 @@ public class Frintezza extends Quest implements Runnable
 	private static int _KillDarkChoirCaptain = 0;
 
 	private static L2BossZone _Zone;
-	@SuppressWarnings("unused")
 	private L2GrandBossInstance frintezza, weakScarlet, strongScarlet;
 	private L2MonsterInstance demon1, demon2, demon3, demon4, portrait1, portrait2, portrait3, portrait4;
 	private L2NpcInstance _frintezzaDummy, _overheadDummy, _portraitDummy1, _portraitDummy3, _scarletDummy;
